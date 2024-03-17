@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
   res.send('TODO List API is up and running!');
 });
 
+app.get('/hello', (req, res) => {
+  res.status(200).send('Hello World');
+});
+
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
